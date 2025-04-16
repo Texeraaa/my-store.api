@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Versão do JS gerado
+    "module": "ESNext", // Usa ESModules (import/export)
+    "moduleResolution": "node", // Resolve como o Node faz
+    "outDir": "./dist", // Pasta de saída do JS compilado
+    "rootDir": "./src", // Onde ficam seus arquivos .ts
+    "strict": true, // Ativa todas as verificações estritas
+    "esModuleInterop": true, // Permite importar libs CommonJS como o express
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true // Ignora erros nos arquivos de definição das libs
+  },
+  "include": ["src"], // Pasta que contém os arquivos TS
+  "exclude": ["node_modules", "dist"] // Ignora essas pastas
+}
